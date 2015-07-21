@@ -13,7 +13,7 @@ install:
   - '[[ "$TRAVIS_PHP_VERSION" != "hhvm" ]] || mkdir -p /home/travis/go/{src,bin,pkg}'
   - '[[ "$TRAVIS_PHP_VERSION" != "hhvm" ]] || export GOPATH="/home/travis/go"'
   - '[[ "$TRAVIS_PHP_VERSION" != "hhvm" ]] || export PATH="$GOPATH/bin:$PATH"'
-  - '[[ "$TRAVIS_PHP_VERSION" != "hhvm" ]] || go get github.com/Naktibalda/hhvm-serve'
+  - '[[ "$TRAVIS_PHP_VERSION" != "hhvm" ]] || go get github.com/LionsAd/hhvm-serve'
   - wget http://codeception.com/codecept.phar -O codecept
   
 before_script:
